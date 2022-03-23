@@ -1065,12 +1065,12 @@ form .submit-btn:hover {
   }
 }
 
-section .footer-list {
+ul .footer-list {
   margin-bottom: 0.75rem;
   list-style-type: none;
 }
 
-section .footer-list a:hover {
+ul .footer-list a:hover {
   --tw-text-opacity: 1;
   color: hsl(224 93% 58% / var(--tw-text-opacity));
 }
