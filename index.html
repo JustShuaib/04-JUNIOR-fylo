@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4437dc6d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body class="font-open-sans">
+    <header>
+      <!-- Logo -->
+      <div>
+        <img src="./images/logo.svg" alt="logo" class="w-20 lg:w-36" />
+      </div>
+      <nav>
+        <a href="#"> Features </a><a href="#"> Teams </a
+        ><a href="#"> Sign In </a>
+      </nav>
+    </header>
+    <main class="grid lg:grid-cols-2 lg:grid-rows-6">
+      <section class="main-section px-8 lg:px-16">
+        <div class="image-container">
+          <img src="./images/illustration-1.svg" alt="" />
+        </div>
+        <article class="lg:order-1">
+          <h2 class="main-heading text-2xl lg:text-3xl">
+            All your files in one secure location, accessible anywhere.
+          </h2>
+          <p class="article-para text-center lg:text-left">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form class="main-form">
+            <div class="flex w-full flex-col lg:items-start">
+              <input
+                type="text"
+                placeholder="Enter your email.."
+                class="text-input"
+                id="first-text"
+              />
+              <p class="hidden text-sm text-red-600">Please check your mail</p>
+            </div>
+            <input type="submit" value="Get Started" class="submit-btn" />
+          </form>
+        </article>
+      </section>
+      <!-- Second section -->
+      <section class="main-section lg:relative lg:mt-14">
+        <img src="./images/bg-curve-mobile.svg" class="lg:hidden" alt="" />
+        <img
+          src="./images/bg-curve-desktop.svg"
+          class="hidden lg:absolute lg:-top-24 lg:left-0 lg:block"
+          alt=""
+        />
+        <!-- The curve at the top of the section -->
+        <div
+          class="image-container bg-neutral-light-grayish-blue px-4 lg:pt-16"
+        >
+          <img src="./images/illustration-2.svg" alt="" />
+        </div>
+        <article class="productive-article">
+          <h3
+            class="font-raleway main-heading pt-16 text-base lg:pl-10 lg:text-2xl"
+          >
+            Stay productive, wherever you are
+          </h3>
+          <p class="article-para text-left">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p class="article-para">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <!-- Link and icon -->
+          <div
+            class="border-accent-moderate-cyan mx-auto mt-6 mb-10 w-fit border-b-2 pb-1 lg:mt-0 lg:mb-6 lg:ml-10"
+          >
+            <a href="" class="text-accent-moderate-cyan inline-block">
+              See how Fylo works
+            </a>
+            <!-- Icon -->
+            <img
+              src="./images/icon-arrow.svg"
+              class="ml-1 inline-block"
+              alt="icon-arrow"
+            />
+          </div>
+          <!-- Block Quote -->
+          <div
+            class="mx-auto mb-20 w-10/12 rounded-lg bg-white py-6 pr-3 pl-10 shadow-lg lg:ml-10 lg:mb-16 lg:w-7/12 lg:pr-6"
+          >
+            <!-- Apostrophe -->
+            <img src="./images/icon-quotes.svg" class="mb-2" alt="Apostrophe" />
+            <p class="text-sm font-bold">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="mt-4 flex">
+              <!-- Image container -->
+              <div class="mr-4 w-12 overflow-hidden rounded-full">
+                <img src="./images/avatar-testimonial.jpg" alt="" />
+              </div>
+              <!-- Title container -->
+              <div>
+                <h4 class="font-bold">Kyle Burton</h4>
+                <h5 class="text-xs">Founder & CEO, Huddle</h5>
+              </div>
+            </div>
+          </div>
+          <!-- End of block quote -->
+        </article>
+      </section>
+      <!-- Access Section -->
+      <section
+        class="bg-pry-desaturated-blue flex flex-col items-center text-white lg:col-span-2 lg:row-span-1 lg:flex-row lg:justify-between lg:space-x-10"
+      >
+        <article class="px-8 lg:w-1/2 lg:px-14">
+          <h3
+            class="font-raleway mb-6 mt-10 text-center text-lg font-bold tracking-wide lg:mb-4 lg:mt-0 lg:text-left lg:text-xl"
+          >
+            Get early access today
+          </h3>
+          <p class="mb-6 text-center lg:text-left">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </article>
+        <form class="sub-form">
+          <div class="flex w-full flex-col lg:items-start">
+            <input
+              type="text"
+              class="text-input"
+              id="second-text"
+              placeholder="email@example.com"
+            />
+            <p class="hidden text-sm text-white">Please check your mail</p>
+          </div>
+          <input
+            type="submit"
+            value="Get Started For Free"
+            class="submit-btn lg:w-1/2"
+          />
+        </form>
+      </section>
+      <!-- Footer -->
+      <section
+        class="bg-pry-very-dark-blue grid pl-10 pb-10 text-white lg:col-span-2 lg:grid-cols-4 lg:items-start lg:pt-16"
+      >
+        <section>
+          <!--Fylo Logo -->
+          <img src="./images/logo.svg" class="mt-16 mb-6 lg:mt-0" alt="logo" />
+          <!-- Phone -->
+          <div class="mb-3">
+            <img
+              src="./images/icon-phone.svg"
+              class="mr-4 inline-block"
+              alt="phone"
+            />
+
+            <span> Phone: +1-543-123-4567 </span>
+          </div>
+          <!-- Gmail -->
+          <div class="mb-3">
+            <span>
+              <img
+                src="./images/icon-email.svg"
+                class="mr-4 inline-block"
+                alt="gmail"
+              />
+            </span>
+            <span> example@fylo.com </span>
+          </div>
+        </section>
+        <section class="mt-10 lg:mt-20">
+          <li class="footer-list"><a href="#">About Us</a></li>
+          <li class="footer-list"><a href="#">Jobs</a></li>
+          <li class="footer-list"><a href="#">Press</a></li>
+          <li class="footer-list"><a href="#">Blog</a></li>
+        </section>
+
+        <section class="mt-10 lg:mt-20">
+          <li class="footer-list"><a href="#">Contact Us</a></li>
+          <li class="footer-list"><a href="#">Terms</a></li>
+          <li class="footer-list"><a href="#">Privacy</a></li>
+        </section>
+        <!-- Icons Section -->
+        <section class="mt-10 text-center lg:mt-20">
+          <!-- Facebook icon -->
+          <span class="icon-container pt-2.5 pb-1 pl-2.5 pr-2">
+            <i class="fa-brands fa-facebook-f text-2xl"></i>
+          </span>
+          <!-- Twitter icon -->
+          <span class="icon-container pt-2 pb-1 pl-2 pr-1.5"
+            ><i class="fa-brands fa-twitter text-xl"></i
+          ></span>
+          <!-- Instagram icon -->
+          <span class="icon-container px-2 pt-2 pb-1.5"
+            ><i class="fa-brands fa-instagram text-xl"></i
+          ></span>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+        <br />
+        Coded by <a href="https://github.com/JustShuaib">Adeoti Shuaib</a>
+      </p>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      const input = document.getElementById("first-text");
+      const secondInput = document.getElementById("second-text");
+      const form = document.querySelector(".main-form");
+      const subForm = document.querySelector(".sub-form");
+
+      // First form
+      function displayError1(e) {
+        const inputValue = input.value;
+        const errmsg = input.nextElementSibling;
+        if (!(inputValue.includes("@") && inputValue.includes("."))) {
+          errmsg.classList.remove("hidden");
+          input.classList.add("error");
+        } else {
+          errmsg.classList.add("hidden");
+          input.classList.remove("error");
+        }
+        input.value = "";
+        e.preventDefault();
+      }
+
+      // Second form
+      function displayError(e) {
+        const inputValue = secondInput.value;
+        const errmsg = secondInput.nextElementSibling;
+        if (!(inputValue.includes("@") && inputValue.includes("."))) {
+          errmsg.classList.remove("hidden");
+          secondInput.classList.add("error");
+        } else {
+          errmsg.classList.add("hidden");
+          secondInput.classList.remove("error");
+        }
+        secondInput.value = "";
+        e.preventDefault();
+      }
+      form.addEventListener("submit", displayError1);
+      subForm.addEventListener("submit", displayError);
+    </script>
+  </body>
+</html>
