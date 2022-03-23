@@ -23,12 +23,11 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop view](./images/Screenshot1.png)
-![Mobile view](./images/Screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/JustShuaib/Fylo-landing-page)
+- Live Site URL: [Live Site](https://shuaib-fylo.netlify.app)
 
 ### Built with
 
